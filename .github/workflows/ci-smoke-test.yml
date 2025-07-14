@@ -10,10 +10,9 @@ jobs:
     name: CI Smoke Test
     runs-on: ubuntu-latest
     steps:
-      # 1. Fetch your code
       - name: Checkout code
         uses: actions/checkout@v4
-
-      # 2. Verify the pipeline is running
+      - name: Wait 7 seconds
+        run: sleep 7
       - name: CI smoke test
         run: echo "✅ CI is running"
