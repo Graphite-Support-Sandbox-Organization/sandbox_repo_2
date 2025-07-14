@@ -1,0 +1,18 @@
+# .github/workflows/ci.yml
+name: CI Smoke Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Fetch your code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Verify the pipeline is running
+      - name: CI smoke test
+        run: echo "✅ CI is running"
