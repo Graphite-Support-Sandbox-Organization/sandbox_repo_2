@@ -13,6 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Sleep/Delay timer
-        run: sleep 180
+        run: sleep 60
       - name: CI smoke test
         run: echo "✅ CI is running"
