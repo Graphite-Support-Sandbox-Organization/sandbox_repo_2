@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Wait 23 seconds
-        run: sleep 23
+      - name: Sleep/Delay timer
+        run: sleep 180
       - name: CI smoke test
         run: echo "✅ CI is running"
